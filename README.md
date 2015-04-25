@@ -1,5 +1,4 @@
 # ProgrammierpraktikumTest
 Demo für das Programmierpraktikum
 
-
-Relevant für die erste Übung: DemoSite.html
+For live demo go to: http://www.patrickreuter.de/demoIndex.html
