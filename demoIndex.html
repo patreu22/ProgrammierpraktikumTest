@@ -6,39 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>ToDo Demo</title>
-
     <!-- Bootstrap -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>
+    
 
   </head>
   <body>
-
+        
 
         <!--Navigation Bar-->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default"> 
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="../demoIndex.html">Demo Organizer</a>
+              <a class="navbar-brand" href="demoIndex.html">Demo Organizer</a>
             </div>
             <div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="../demoIndex.html">All tasks</a></li>
-                <li><a href="../demoAdd.html"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;Add Todo</a></li>
-                <li><a href="../demoImpressum.html">Impressum</a></li>
+                <li class="active"><a href="demoIndex.html">All tasks</a></li>
+                <li><a href="demoAdd.html"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;Add Todo</a></li>
+                <li><a href="demoImpressum.html">Impressum</a></li> 
               </ul>
             </div>
           </div>
         </nav>
 
         <!--Pageheader -->
-        <div class="container">
+        <div class="container"> 
            <div class="jumbotron">
             <h1>Demo Organizer.</h1>
             <p>Your personal Todo webapp.</p>
@@ -73,13 +72,13 @@
               </th>
             </tr>
           </thead>
-
+      
           <!--Table content-->
           <tbody>
               <tr>
               <td class="text-left">Sign up for the Frontend Developer Confernce in San Francisco</td>
               <td>04-29-2015</td>
-              <td>
+              <td> 
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
                     30%
@@ -88,7 +87,7 @@
               </td>
               <td >
                 <div class="btn-group">
-                  <a href="../demoEdit.html" role="button" class="btn btn-default">Edit</a>
+                  <a href="demoEdit.html" role="button" class="btn btn-default">Edit</a>
                   <button class="btn btn-default">Delete</button>
                   <button class="btn btn-default" data-toggle="tooltip" title="Done?" data-placement="right"><span class="glyphicon glyphicon-check"></button>
                 </div>
@@ -97,7 +96,7 @@
             <tr>
               <td class="text-left">Invite famous people for the launch party of Demo Organizer</td>
               <td>05-31-2015</td>
-              <td>
+              <td> 
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
                     70%
@@ -115,7 +114,7 @@
             <tr>
               <td class="text-left">Buy birthday presents for my nephews</td>
               <td>12-23-2015</td>
-              <td>
+              <td> 
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
                     95%
@@ -130,12 +129,11 @@
                 </div>
               </td>
             </tr>
-          <!-- tbody wurde mehrmals geöffnet. Daher hier rausgenommen-->
-          <!--<tbody>-->
+          <tbody>
               <tr>
               <td class="text-left">Buy commercials at Times Square in New York</td>
               <td>10-14-2015</td>
-              <td>
+              <td> 
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width:18%">
                     18%
@@ -153,7 +151,7 @@
             <tr>
               <td class="text-left">Force all employees to switch to Slack for company discount</td>
               <td>06-13-2015</td>
-              <td>
+              <td> 
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
                     60%
@@ -171,7 +169,7 @@
             <tr>
               <td class="text-left">Implement Facebook Login for our awesome product</td>
               <td>05-03-2015</td>
-              <td>
+              <td> 
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">
                     45%
@@ -186,39 +184,13 @@
                 </div>
               </td>
             </tr>
-
-
-
-          <!--NEW!!!! Test of Javascript!-->
-          <script>
-              var Ausgabe = "";
-              for (var i = 0; i <= 10; i++)
-                  Ausgabe = Ausgabe + '<tr><td class="text left">Task ' + i +
-                  '</td><td>05-03-2015</td>' +
-                  '<td><div class="progress">' +
-                  '<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:' + (i*7) + '%">45%</div>' +
-                  '</div></td>' +
-                  '<td><div class="btn-group">' +
-                    '<button class="btn btn-default">Edit</button>' +
-                      '<button class="btn btn-default">Delete</button>' +
-                      '<button class="btn btn-default" data-toggle="tooltip" title="Done?" data-placement="right"><span class="glyphicon glyphicon-check"></button>' +
-                    '</div>' +
-                  '</td>' +
-                '</tr>';
-              document.write(Ausgabe);
-
-          </script>
-
-
-
-
-        </tbody>
+          </tbody>
         </table>
         </div>
-
+      
           <!--Add a to do-->
           <div class="container">
-              <a href="../demoAdd.html" role="button" class="btn btn-primary btn-block">Add a new task
+              <a href="demoAdd.html" role="button" class="btn btn-primary btn-block">Add a new task  
               <span class="glyphicon glyphicon-edit"></span></a>
           </div>
 
@@ -226,10 +198,10 @@
                           <!--Initialize Tooltips-->
                       <script>
                       $(document).ready(function(){
-                      $('[data-toggle="tooltip"]').tooltip();
+                      $('[data-toggle="tooltip"]').tooltip();   
                       });
                       </script>
 
-
+               
   </body>
 </html>
